@@ -1,0 +1,261 @@
+/* canvar for the 3d object   */
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* background body adjustments  */
+body {
+  overflow-x: hidden;
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    #1230ae,
+    #6c48c5,
+    #7462ff,
+    #c68fe6,
+    #cbc4c4
+  );
+  background-size: 300% 300%;
+  animation: color 4s ease-in-out infinite;
+}
+
+/* animation for the background  */
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* navbar styles  */
+.topnav {
+  position: sticky;
+  z-index: 10;
+  margin: 2em;
+}
+/* nav bar links  */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 13px;
+  text-decoration: none;
+  font-family: "Montserrat Alternates", system-ui;
+  font-size: 17px;
+}
+/* hover effects on nav bar  */
+.topnav a:hover {
+  background-color: #dddddd81;
+  border-radius: 2em;
+  color: black;
+  transition: all 0.4s;
+}
+/* home page active  */
+.topnav a.active {
+  border-radius: 1.3em;
+  background: rgba(180, 175, 175, 0.559);
+  color: white;
+}
+/* nav bar right side  */
+.topnav-right {
+  float: right;
+}
+/* nav bar right side image */
+.topnav-right img {
+  width: 2em;
+  border: 1px dashed white;
+
+  border-radius: 2em;
+  margin-left: 1em;
+}
+
+/* main headings */
+header {
+  margin-top: 1em;
+  text-align: center;
+  color: white;
+}
+
+/* heading text  */
+header h1 {
+  font-size: 5em;
+  font-weight: 500;
+  font-family: "Caveat", cursive;
+}
+/* heading footprint  */
+header svg {
+  width: 0.7em;
+  height: 0.7em;
+}
+
+/* search area at the footer  */
+#searc-bar {
+  font-family: "Courier New", Courier, monospace;
+  width: 54em;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 78%;
+  transform: translateY(-2em);
+  /* transform: translateX(37em); */
+}
+/* discover heading  */
+.info h2 {
+  font-size: 3em;
+  letter-spacing: 6px;
+  margin-bottom: 0.2em;
+}
+/* input box  */
+.info input {
+  width: 22em;
+  padding: 8px 10px;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  background: transparent;
+}
+/* search svg  */
+.info svg {
+  width: 2em;
+  transform: translateX(-70%);
+}
+/* second page section, main */
+section {
+  height: 200vh;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  color: #fff;
+}
+
+section .container {
+  height: 90vh;
+  padding-top: 15em;
+  padding-bottom: 10em;
+}
+/* cartoon heading  */
+h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 1000;
+  font-size: 3em;
+}
+/* section container, div box  */
+section .content {
+  display: flex;
+}
+/* section first div, first paragraph  */
+section .paragraph {
+  margin: 2em;
+  flex: 1;
+  padding: 2em;
+  border-radius: 2em;
+}
+/* section first div, second para  */
+section .paragraph:first-child {
+  margin-right: 20px;
+  padding: 2em;
+  background: #848cad65;
+  border-radius: 2em;
+}
+/* section first div, first image  */
+section .image1 {
+  border-radius: 1em;
+}
+
+/* section second div  */
+section .content2 {
+  display: flex;
+  position: relative;
+  z-index: 20;
+}
+/* second div second para  */
+section .paragraph2 {
+  margin: 2em;
+  flex: 1;
+  padding: 2em;
+  border-radius: 2em;
+}
+/* about them para graph  */
+section .long-2 {
+  background: #848cad65;
+}
+/* wolf oimage, second div  */
+section .image2 {
+  width: 12em;
+  border-radius: 1em;
+}
+/* all the minor headings including about and images  */
+h4 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+}
+/* section all paragraph  */
+section p {
+  font-family: "Montserrat Alternates", system-ui;
+  line-height: 1.5em;
+}
+/* line tag  */
+hr {
+  color: white;
+  margin-top: 4em;
+}
+/* social icons container */
+.media-icons {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 2em 0;
+}
+/* social icons size */
+.media-icons img {
+  width: 1em;
+  margin: 0 0.5em;
+}
+/* social info  */
+.media-icons p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #2e0d81;
+  display: inline;
+}
+/* scroll bar styled  */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* scrollbar background  */
+::-webkit-scrollbar-track {
+  background: rgb(188, 179, 245);
+}
+/* scroll bar thumb  */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#642bff, #ff22e6);
+  border-radius: 2em;
+}
+
+/* section animation WORKS ON SELECTED BROWSERs(Chrome) */
+.autoshow {
+  animation: autoShowAnimation both;
+  animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
